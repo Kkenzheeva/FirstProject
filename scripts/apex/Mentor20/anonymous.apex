@@ -1,0 +1,1 @@
+ContactData.generateContacts(  5 , 'Kenzh');
