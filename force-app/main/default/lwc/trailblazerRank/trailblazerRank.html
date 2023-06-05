@@ -1,0 +1,31 @@
+<template>
+  <lightning-card title="OUR MENTOR IS BEST" icon-name="utility:rating">
+    <div class="slds-var-m=around_meduim">
+      <lightning-input
+        type= "number"
+        label="Badges"
+        placeholder="badges"
+        onchange={handleBadgesChange}
+      ></lightning-input>
+    </div>
+
+    <div class="slds-var-m=around_meduim">  
+        <lightning-input
+          type= "number"
+          label="Points"
+          placeholder="points"
+          onchange={handlePointsChange}
+        ></lightning-input>
+      </div>
+  
+  <template lwc:if ={isRanger}>
+    <div class="slds-var-m-vertical_medium slds-text-heading_medium
+    slds-text-align_center slds-text-color_success slds-border_bottom">
+        <p> Group-1 members all HIRED !!! </p>
+
+    </div>
+  </template>
+
+
+  </lightning-card>
+</template>

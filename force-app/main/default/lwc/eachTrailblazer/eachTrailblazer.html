@@ -1,0 +1,17 @@
+<template>
+   <lightning-card  title="Each Trailblazer" icon-name="custom:custom14">
+    <div class="slds-var-m-around_small slds-align_absolute-center">
+        <ul class="slds-list_dotted">
+            <template for:each={trailblazerArray} for:item ="each">
+                <li key={each.id}>
+                    Trailblazer {each.id} : {each.firstName} {each.lastName} /Badges {each.badges}/ Points-{each.points}
+
+                </li>
+            </template>
+        </ul>
+
+    </div>
+   </lightning-card>
+
+
+</template>
